@@ -1,0 +1,11 @@
+
+服务器:
+  接受编译服务器:
+    name: string  ,设置编译服务器名,设置ok后,stat :start->wait
+    re_start_build: return string (success/failed) ; number fd ; 成功 路径/失败 原因
+    
+
+    
+编译服务器: 
+  接受服务器传过来的参数
+    start_build: fd ; path
